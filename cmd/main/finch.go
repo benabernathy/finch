@@ -46,7 +46,7 @@ func main() {
 	for {
 		var aircraftResponse paclient.AircraftResponse
 		if err := paclient.GetAircraft(cfg.PiAwareConfig.AircraftUrl, &aircraftResponse); err != nil {
-			log.Fatal(err)
+			log.Println(err)
 
 		}
 		aircraft := processAircraftData(aircraftResponse)

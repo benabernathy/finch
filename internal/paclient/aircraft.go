@@ -67,13 +67,16 @@ func GetAircraft(url string, aircraftResponse *AircraftResponse) error {
 
 	}
 
-	if err := json.Unmarshal([]byte(buf.String()), aircraftResponse); err != nil {
+	body := buf.String()
+	body = strings.ReplaceAll(body, "ground", "0")
+
+	if err := json.Unmarshal([]byte(body), aircraftResponse); err != nil {
 
 		return &AircraftClientError{
 			Message: "Error while unmarshalling response body",
 			Url:     url,
 			Err:     err,
-			Data:    buf.String(),
+			Data:    body,
 		}
 	}
 
