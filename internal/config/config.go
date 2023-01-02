@@ -9,7 +9,6 @@ type Config struct {
 	PiAwareConfig struct {
 		AircraftUrl string `yaml:"aircraft-url" env:"FA_AC_URL" env-default:"http://piaware:80/skyaware/data/aircraft.json"`
 		ReceiverUrl string `yaml:"receiver-url" env:"FA_RCV_URL" env-defualt:"http://piaware:80/skyaware/data/receiver.json"`
-		Delay       int    `yaml:"delay" env:"FA_DELAY" env-default:"30"`
 	} `yaml:"piaware"`
 	Display struct {
 		Delay              int    `yaml:"delay" env:"FA_DISPLAY_DELAY" env-default:"5"`

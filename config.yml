@@ -1,11 +1,29 @@
 piaware:
+  # URL to the skyaware aircraft JSON service
   aircraft-url: http://piaware:80/skyaware/data/aircraft.json
+
+  # URL to the skyaware receiver service. Receiver provides
+  # current location.
   receiver-url: http://piaware:80/skyaware/data/receiver.json
-  delay: 30
+
 display:
+
+  # Delay for cycling between aircraft (in seconds)
   delay: 5
+
+  # Transition altitude, used to swtich between showing full
+  # altitude and a flight level. Units are in feet.
   transAlt: 19000
+
+  # If true, then any aircraft above the transition altitude
+  # will show a flight level
   useFL: true
+
+  # Altitude unit of measure - UOM (FT, M)
   altUnits: FT
+
+  # Aircraft ground speed UOM (KN, KPH, MPH)
   speedUnits: KN
+
+  # Aircraft distance from receiver UOM (NM, MI, KM)
   distanceUnits: NM
