@@ -31,7 +31,7 @@ type AircraftClientError struct {
 
 func (e *AircraftClientError) Error() string {
 
-	return fmt.Sprintf("%s: %s, %v", e.Message, e.Url, e.Err)
+	return fmt.Sprintf("%s: %s, %v, %s", e.Message, e.Url, e.Err, e.Data)
 }
 
 func GetAircraft(url string, aircraftResponse *AircraftResponse) error {
