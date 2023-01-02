@@ -1,7 +1,8 @@
+![A bird](img/finch_header.png)
 # Finch 
 *An LCD status monitor for PiAware*
 
-![Finch Exmaple](img/example.jpg)
+![Finch Exmaple](img/example.png)
 
 ## Installation
 
@@ -25,3 +26,6 @@ included in future releases.
 ## Issues
 
 Report issues/recommendations by opening up an issue in the [Finch GitHub](https://github.com/benabernathy/finch/issues) project.
+
+
+Header image credit: [Pedro Machado](https://www.svgrepo.com/svg/417386/bird)
