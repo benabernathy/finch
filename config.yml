@@ -1,0 +1,11 @@
+piaware:
+  aircraft-url: http://piaware:80/skyaware/data/aircraft.json
+  receiver-url: http://piaware:80/skyaware/data/receiver.json
+  delay: 30
+display:
+  delay: 5
+  transAlt: 19000
+  useFL: true
+  altUnits: FT
+  speedUnits: KN
+  distanceUnits: NM
