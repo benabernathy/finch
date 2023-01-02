@@ -1,7 +1,6 @@
 package config
 
 import (
-	"errors"
 	"github.com/ilyakaznacheev/cleanenv"
 )
 
@@ -20,12 +19,9 @@ type Config struct {
 	} `yaml:"display"`
 }
 
-var ServiceError = errors.New("Could not invoke receiver service on piaware")
-
 func GetConfig(configPath string, config *Config) error {
-	var cfg Config
 
-	if err := cleanenv.ReadConfig(configPath, &cfg); err != nil {
+	if err := cleanenv.ReadConfig(configPath, &config); err != nil {
 		return nil
 	}
 
