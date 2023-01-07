@@ -1,2 +1,2 @@
 ALL:
-	go -o bin/finch build cmd/main/finch.go
+	go build -o bin/finch cmd/main/finch.go
